@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.tech_talent.views.ListActivity;
+
 
 public class MainActivity extends AppCompatActivity {
     CardView cardList;
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         cardList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                Intent i = new Intent(getApplicationContext(), ListActivity.class);
                 startActivity(i);
             }
         });
